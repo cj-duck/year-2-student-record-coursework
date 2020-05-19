@@ -1,0 +1,25 @@
+﻿<Window x:Class="Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Student Record System" Height="286" Width="565" Topmost="True">
+    <Grid RenderTransformOrigin="0.504,0.556" Background="#FFD4FFFF">
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="144,44,0,0" x:Name="txtFirstName" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="lblMatric" Content="Matriculation Number:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMatric" HorizontalAlignment="Left" Height="23" Margin="144,13,0,0" TextWrapping="Wrap" Text="10001" VerticalAlignment="Top" Width="120"/>
+        <Label Content="First Name:" HorizontalAlignment="Left" Margin="69,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Second Name:" HorizontalAlignment="Left" Margin="52,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSecondName" HorizontalAlignment="Left" Height="23" Margin="144,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Coursework Mark:" HorizontalAlignment="Left" Margin="34,103,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCourseMark" HorizontalAlignment="Left" Height="23" Margin="144,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtExamMark" HorizontalAlignment="Left" Height="23" Margin="144,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Exam Mark:" HorizontalAlignment="Left" Margin="69,135,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date of Birth:" HorizontalAlignment="Left" Margin="60,167,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="29,214,0,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click" Background="#FFA5CFA7"/>
+        <Button x:Name="btnFind" Content="Find" HorizontalAlignment="Left" Margin="189,214,0,0" VerticalAlignment="Top" Width="75" Click="btnFind_Click_1" Background="#FFDCDCA8"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="109,214,0,0" VerticalAlignment="Top" Width="75" Click="btnDelete_Click" Background="#FFBF9696"/>
+        <ListBox x:Name="lbxStudents" HorizontalAlignment="Left" Height="150" Margin="310,44,0,0" VerticalAlignment="Top" Width="211" SelectionChanged="lbxStudents_SelectionChanged"/>
+        <Label Content="Stored Students:" HorizontalAlignment="Left" Margin="310,13,0,0" VerticalAlignment="Top"/>
+        <Button Content="List All" HorizontalAlignment="Left" Margin="310,213,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <DatePicker x:Name="dpDOB" HorizontalAlignment="Left" Margin="145,170,0,0" VerticalAlignment="Top" Width="119"/>
+    </Grid>
+</Window>
